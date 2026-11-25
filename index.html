@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lhayness Hazel S. Sagales | Web Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Floating Action Bar (Hidden when printing/saving as PDF) -->
+  <div class="top-controls no-print">
+    <button onclick="window.print()" class="btn-action">
+      <i class="fa-solid fa-download"></i> Save as PDF / Print
+    </button>
+    <button onclick="copyEmail()" class="btn-action btn-secondary">
+      <i class="fa-regular fa-copy"></i> Copy Email
+    </button>
+  </div>
+
+  <!-- Main Resume Container -->
+  <main class="resume-wrapper">
+    
+    <!-- LEFT COLUMN -->
+    <aside class="left-column">
+      <!-- Name Banner -->
+      <div class="name-banner">
+        <h1>LHAYNESS<br>HAZEL S.<br>SAGALES</h1>
+        <p class="subtitle">Information technology student</p>
+      </div>
+
+      <!-- Contact Section -->
+      <section class="left-section">
+        <div class="section-ribbon">CONTACT</div>
+        <ul class="contact-list">
+          <li>
+            <a href="https://maps.google.com/?q=1727+Estanquillo+Sta+Ana,+Bulakan,+Bulacan" target="_blank" title="View on Google Maps">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>1727, Estanquillo Sta Ana,<br>Bulakan, Bulacan.</span>
+            </a>
+          </li>
+          <li>
+            <a href="tel:09309347125" title="Call Phone Number">
+              <i class="fa-solid fa-phone"></i>
+              <span>0930-934-7125</span>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:sagaleslhayness@gmail.com" title="Send an Email">
+              <i class="fa-solid fa-envelope"></i>
+              <span>sagaleslhayness@gmail.com</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Education Section (Left - Clickable Schools) -->
+      <section class="left-section">
+        <div class="section-ribbon">EDUCATION</div>
+        <ul class="bullet-list school-list">
+          <li>
+            <a href="https://www.google.com/maps/search/?api=1&query=Doña+Candelaria+Meneses+Duque+National+High+School" target="_blank" title="Open School Info">
+              Doña Candelaria Meneses Duque National High School, <strong>2018-2022</strong>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.google.com/maps/search/?api=1&query=Immaculate+Conception+International+Bulakan" target="_blank" title="Open School Info">
+              Immaculate Conception Institutions Senior High School, <strong>2022-2024</strong>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.bulsu.edu.ph/" target="_blank" title="Visit BulSU Website">
+              <strong>2024 – Present</strong> Bulacan State University - Meneses Campus
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Skills Section -->
+      <section class="left-section">
+        <div class="section-ribbon">SKILLS</div>
+        <ul class="bullet-list skills-list">
+          <li class="skill-item" data-skill="Figma, Wireframing, Prototyping, Canva">UI/UX Design</li>
+          <li class="skill-item" data-skill="HTML5, CSS3, JavaScript, React, Vite, Firebase">Web Development</li>
+          <li class="skill-item" data-skill="Android Studio, Java, XML, Mobile UI">Mobile App Development</li>
+          <li class="skill-item" data-skill="Microsoft Word, Google Docs, Technical Writing">MS Word & Documentation</li>
+        </ul>
+        <p class="skill-hint no-print">*Click a skill to view tools</p>
+        <div id="skill-detail-box" class="skill-detail-box hidden"></div>
+      </section>
+    </aside>
+
+    <!-- RIGHT COLUMN -->
+    <section class="right-column">
+      <!-- Profile Image (Clickable -> Opens Facebook) -->
+      <div class="profile-photo-container">
+        <a href="https://www.facebook.com/tetsu.shitamsi" target="_blank" title="Visit my Facebook Profile" class="photo-link">
+          <img src="profile.jpeg" alt="Lhayness Hazel S. Sagales" onerror="this.src='https://via.placeholder.com/300x300/806554/ffffff?text=Your+Photo'" />
+          <span class="photo-badge no-print"><i class="fa-brands fa-facebook"></i> Facebook</span>
+        </a>
+      </div>
+
+      <!-- Education / About Section (Right) -->
+      <div class="right-section">
+        <h2 class="right-heading">
+          <i class="fa-solid fa-graduation-cap"></i> Education
+        </h2>
+        <div class="timeline-block">
+          <span class="timeline-dot"></span>
+          <h3 class="item-title">Bachelor of Science in Information Technology</h3>
+          <p class="item-subtitle">Bulacan State University - Meneses campus</p>
+          <p class="item-description">
+            I am a dedicated third-year college student at Bulacan State University – Meneses Campus, currently pursuing a Bachelor of Science in Information Technology. Equipped with a strong foundation in web and mobile application development as well as UI/UX design, I am passionate about building practical, user-centered digital solutions and continuously expanding my technical skills in real-world environments.
+          </p>
+        </div>
+      </div>
+
+      <!-- Academic Projects Section (Non-clickable) -->
+      <div class="right-section">
+        <h2 class="right-heading">
+          <i class="fa-solid fa-briefcase"></i> Academic Projects
+        </h2>
+        
+        <div class="timeline-block">
+          <span class="timeline-dot"></span>
+          
+          <div class="project-card">
+            <div class="project-header">
+              <h3 class="item-title">Barangay Express Portal (2026)</h3>
+              <p class="item-subtitle">Web Development Project</p>
+            </div>
+            <p class="item-description">
+              Developed a web-based service application using React, Vite, and Firebase to digitize barangay document requests, streamline administrative approvals, and track application statuses in real time.
+            </p>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <h3 class="item-title">PrintGo Mobile Application (2026)</h3>
+              <p class="item-subtitle">Mobile App & UI/UX Project</p>
+            </div>
+            <p class="item-description">
+              Designed and developed a hyper-local print-on-demand mobile application featuring Google Authentication, QR code shop access, and real-time order tracking to connect users with nearby print shops.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast no-print">Email copied to clipboard!</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
